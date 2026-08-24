@@ -27,16 +27,16 @@ export default function SectionHeader({
   }[align];
 
   return (
-    <div className={`flex flex-col max-w-3xl mb-12 sm:mb-16 ${alignClass} ${className}`}>
+    <div className={`flex flex-col max-w-3xl mb-8 sm:mb-12 md:mb-16 ${alignClass} ${className}`}>
       {badge && (
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
-          className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-[0.15em] mb-4 border transition-colors shadow-subtle bg-white/5 border-white/10 text-gold-400"
+          className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-semibold uppercase tracking-wider sm:tracking-[0.15em] mb-3 sm:mb-4 border transition-colors shadow-subtle bg-white/5 border-white/10 text-[#3eb5e5]"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-gold-400" />
+          <span className="w-1.5 h-1.5 rounded-full bg-[#3eb5e5]" />
           <span>{badge}</span>
         </motion.div>
       )}
@@ -46,7 +46,7 @@ export default function SectionHeader({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.05 }}
-        className="font-sans text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.15] mb-4 text-white"
+        className="font-sans text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.2] sm:leading-[1.15] mb-3 sm:mb-4 text-white"
       >
         {title}
       </motion.h2>
@@ -57,7 +57,7 @@ export default function SectionHeader({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-base sm:text-lg font-normal leading-relaxed text-slate-400"
+          className="text-sm sm:text-base md:text-lg font-normal leading-relaxed text-slate-400"
         >
           {subtitle}
         </motion.p>

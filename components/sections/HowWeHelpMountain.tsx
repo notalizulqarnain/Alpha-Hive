@@ -77,26 +77,26 @@ export default function HowWeHelpMountain() {
         />
 
         {/* Mountain Infographic Architecture */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start lg:items-center">
           {/* Left: The Ascending Visual Tiers */}
-          <div className="lg:col-span-6 space-y-4">
+          <div className="lg:col-span-6 space-y-3 sm:space-y-4">
             {/* Summit Tier */}
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="p-5 rounded-2xl bg-[#3eb5e5]/10 border border-[#3eb5e5]/40 shadow-subtle flex items-center justify-between"
+              className="p-4 sm:p-5 rounded-2xl bg-[#3eb5e5]/10 border border-[#3eb5e5]/40 shadow-subtle flex items-center justify-between"
             >
-              <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#3eb5e5] text-[#082133] flex items-center justify-center font-bold shadow-md shadow-[#3eb5e5]/20">
-                  <Sparkles className="w-5 h-5" />
+              <div className="flex items-center gap-3 sm:gap-3.5">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#3eb5e5] text-[#082133] flex items-center justify-center font-bold shadow-md shadow-[#3eb5e5]/20 shrink-0">
+                  <Sparkles className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-base text-white">Peace of mind</h4>
-                  <p className="text-xs text-slate-300 font-normal">The ultimate financial summit</p>
+                  <h4 className="font-sans font-bold text-sm sm:text-base text-white">Peace of mind</h4>
+                  <p className="text-[11px] sm:text-xs text-slate-300 font-normal">The ultimate financial summit</p>
                 </div>
               </div>
-              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#3eb5e5] bg-[#3eb5e5]/10 px-3 py-1 rounded-full border border-[#3eb5e5]/30">
+              <span className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider sm:tracking-[0.18em] text-[#3eb5e5] bg-[#3eb5e5]/10 px-2.5 py-1 sm:px-3 sm:py-1 rounded-full border border-[#3eb5e5]/30 shrink-0">
                 Peak
               </span>
             </motion.div>
@@ -107,15 +107,15 @@ export default function HowWeHelpMountain() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.05 }}
-              className="p-4 rounded-2xl bg-[#111111] border border-white/10 hover:border-white/20 transition-colors flex items-center justify-between"
+              className="p-3.5 sm:p-4 rounded-2xl bg-[#111111] border border-white/10 hover:border-white/20 transition-colors flex items-center justify-between"
             >
-              <div className="flex items-center gap-3.5">
-                <div className="w-8 h-8 rounded-xl bg-white/10 text-white flex items-center justify-center text-xs font-semibold">
+              <div className="flex items-center gap-3 sm:gap-3.5">
+                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-white/10 text-white flex items-center justify-center text-xs font-semibold shrink-0">
                   3
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-sm text-white">Goal setting & tracking</h4>
-                  <p className="text-xs text-slate-400 font-normal">Real-time progress clarity</p>
+                  <h4 className="font-sans font-bold text-xs sm:text-sm text-white">Goal setting & tracking</h4>
+                  <p className="text-[11px] sm:text-xs text-slate-400 font-normal">Real-time progress clarity</p>
                 </div>
               </div>
             </motion.div>
@@ -126,15 +126,15 @@ export default function HowWeHelpMountain() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="p-4 rounded-2xl bg-[#111111] border border-white/10 hover:border-white/20 transition-colors flex items-center justify-between"
+              className="p-3.5 sm:p-4 rounded-2xl bg-[#111111] border border-white/10 hover:border-white/20 transition-colors flex items-center justify-between"
             >
-              <div className="flex items-center gap-3.5">
-                <div className="w-8 h-8 rounded-xl bg-white/10 text-white flex items-center justify-center text-xs font-semibold">
+              <div className="flex items-center gap-3 sm:gap-3.5">
+                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-white/10 text-white flex items-center justify-center text-xs font-semibold shrink-0">
                   2
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-sm text-white">Time efficiency & Clarity</h4>
-                  <p className="text-xs text-slate-400 font-normal">We handle the complexity</p>
+                  <h4 className="font-sans font-bold text-xs sm:text-sm text-white">Time efficiency & Clarity</h4>
+                  <p className="text-[11px] sm:text-xs text-slate-400 font-normal">We handle the complexity</p>
                 </div>
               </div>
             </motion.div>
@@ -145,32 +145,32 @@ export default function HowWeHelpMountain() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.15 }}
-              className="p-4 rounded-2xl bg-[#111111] border border-white/10 hover:border-white/20 transition-colors flex items-center justify-between"
+              className="p-3.5 sm:p-4 rounded-2xl bg-[#111111] border border-white/10 hover:border-white/20 transition-colors flex items-center justify-between"
             >
-              <div className="flex items-center gap-3.5">
-                <div className="w-8 h-8 rounded-xl bg-white/10 text-white flex items-center justify-center text-xs font-semibold">
+              <div className="flex items-center gap-3 sm:gap-3.5">
+                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-white/10 text-white flex items-center justify-center text-xs font-semibold shrink-0">
                   1
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-sm text-white">Financial Security</h4>
-                  <p className="text-xs text-slate-400 font-normal">Protected against uncertainty</p>
+                  <h4 className="font-sans font-bold text-xs sm:text-sm text-white">Financial Security</h4>
+                  <p className="text-[11px] sm:text-xs text-slate-400 font-normal">Protected against uncertainty</p>
                 </div>
               </div>
             </motion.div>
 
             {/* Interactive Milestone Tabs Selector */}
-            <div className="pt-2">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400 mb-3">
+            <div className="pt-3 sm:pt-4">
+              <p className="text-[11px] sm:text-xs font-semibold uppercase tracking-wider sm:tracking-[0.18em] text-slate-400 mb-2.5 sm:mb-3">
                 Explore Core Advisory Disciplines:
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 {milestones.map((m) => {
                   const isSelected = activeMilestone.id === m.id;
                   return (
                     <button
                       key={m.id}
                       onClick={() => setActiveMilestone(m)}
-                      className={`px-4 py-2 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer ${
+                      className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold transition-all duration-200 cursor-pointer ${
                         isSelected
                           ? "bg-[#3eb5e5] text-[#082133] shadow-md shadow-[#3eb5e5]/20 font-bold"
                           : "bg-white/5 text-slate-400 border border-white/10 hover:border-white/20 hover:text-white"
@@ -185,7 +185,7 @@ export default function HowWeHelpMountain() {
           </div>
 
           {/* Right: Active Discipline Detailed Card */}
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-6 mt-4 lg:mt-0">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeMilestone.id}
@@ -193,36 +193,36 @@ export default function HowWeHelpMountain() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -15 }}
                 transition={{ duration: 0.25 }}
-                className="p-8 sm:p-10 rounded-3xl bg-[#111111] border border-white/10 shadow-card space-y-6"
+                className="p-6 sm:p-8 md:p-10 rounded-3xl bg-[#111111] border border-white/10 shadow-card space-y-4 sm:space-y-6"
               >
                 <div className="flex items-center justify-between">
-                  <span className="px-3.5 py-1 rounded-full bg-[#3eb5e5]/10 text-[#3eb5e5] text-xs font-semibold uppercase tracking-[0.18em] border border-[#3eb5e5]/30">
+                  <span className="px-3 py-1 rounded-full bg-[#3eb5e5]/10 text-[#3eb5e5] text-[10px] sm:text-xs font-semibold uppercase tracking-wider sm:tracking-[0.18em] border border-[#3eb5e5]/30">
                     {activeMilestone.category} Milestone
                   </span>
-                  <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400">
+                  <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 shrink-0">
                     <Compass className="w-4 h-4" />
                   </div>
                 </div>
 
                 <div>
-                  <h3 className="font-sans font-bold text-2xl sm:text-3xl text-white">
+                  <h3 className="font-sans font-bold text-xl sm:text-2xl md:text-3xl text-white">
                     {activeMilestone.name}
                   </h3>
-                  <p className="text-sm sm:text-base text-slate-400 font-normal mt-3 leading-relaxed">
+                  <p className="text-xs sm:text-sm md:text-base text-slate-400 font-normal mt-2 sm:mt-3 leading-relaxed">
                     {activeMilestone.description}
                   </p>
                 </div>
 
-                <div className="pt-6 border-t border-white/10 space-y-3">
-                  <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+                <div className="pt-4 sm:pt-6 border-t border-white/10 space-y-2.5 sm:space-y-3">
+                  <h4 className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider sm:tracking-[0.18em] text-slate-400">
                     Key Strategic Outputs
                   </h4>
                   {activeMilestone.deliverables.map((item) => (
-                    <div key={item} className="flex items-center gap-3 text-slate-300 text-xs sm:text-sm">
+                    <div key={item} className="flex items-center gap-2.5 sm:gap-3 text-slate-300 text-xs sm:text-sm">
                       <div className="w-4 h-4 rounded-full bg-[#3eb5e5]/10 text-[#3eb5e5] border border-[#3eb5e5]/30 flex items-center justify-center shrink-0">
                         <Check className="w-3 h-3" />
                       </div>
-                      <span className="font-medium">{item}</span>
+                      <span className="font-medium leading-snug">{item}</span>
                     </div>
                   ))}
                 </div>

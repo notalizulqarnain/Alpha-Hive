@@ -3,8 +3,8 @@ import SectionHeader from "@/components/ui/SectionHeader";
 
 export default function TermsPage() {
   return (
-    <div className="py-12 sm:py-20 bg-[#0a0a0a]">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <div className="py-8 sm:py-16 md:py-20 bg-[#0a0a0a]">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
         <SectionHeader
           badge="Legal Compliance"
           title="Terms & Conditions"
@@ -12,7 +12,7 @@ export default function TermsPage() {
           align="left"
         />
 
-        <div className="rounded-3xl bg-[#111111] border border-white/10 shadow-card p-8 sm:p-12 space-y-6 text-slate-300 text-sm leading-relaxed font-normal">
+        <div className="rounded-3xl bg-[#111111] border border-white/10 shadow-card p-6 sm:p-10 md:p-12 space-y-5 sm:space-y-6 text-slate-300 text-xs sm:text-sm leading-relaxed font-normal">
           <ol className="list-decimal pl-5 space-y-4 font-normal">
             <li>
               We do our best to ensure that the website operates properly at all times, but we make no warranties as to the availability or accessibility of the website, and (save as otherwise set out in these terms and conditions) we will not be liable for any damages, loss, costs or expenses incurred by you as a result of any lack of availability or accessibility of the website.

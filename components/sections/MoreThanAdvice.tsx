@@ -83,17 +83,17 @@ export default function MoreThanAdvice() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.25, duration: 0.45 }}
-              className="absolute -bottom-6 -left-6 sm:-left-8 p-5 sm:p-6 rounded-3xl bg-[#111111] border border-white/[0.08] shadow-card max-w-xs sm:max-w-sm"
+              className="mt-4 sm:mt-0 sm:absolute sm:-bottom-6 sm:left-4 lg:-left-6 p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-[#111111] border border-white/[0.08] shadow-card w-full sm:w-auto sm:max-w-xs md:max-w-sm"
             >
               <div className="flex items-start gap-3.5">
-                <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/[0.08] flex items-center justify-center text-white font-sans font-bold text-xl shrink-0">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white/5 border border-white/[0.08] flex items-center justify-center text-white font-sans font-bold text-lg sm:text-xl shrink-0">
                   20+
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-sm text-white">
+                  <h4 className="font-sans font-bold text-xs sm:text-sm text-white">
                     Years Financial Expertise
                   </h4>
-                  <p className="text-xs text-slate-400 font-normal mt-0.5 leading-snug">
+                  <p className="text-[11px] sm:text-xs text-slate-400 font-normal mt-0.5 leading-snug">
                     Combining institutional investment banking with bespoke private advisory.
                   </p>
                 </div>

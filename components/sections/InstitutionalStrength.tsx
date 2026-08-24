@@ -49,57 +49,57 @@ export default function InstitutionalStrength() {
 
           {/* Right: SJP in numbers live counters */}
           <div className="lg:col-span-6">
-            <div className="p-8 sm:p-10 rounded-3xl bg-white/5 border border-white/[0.08] shadow-card-dark space-y-8">
+            <div className="p-6 sm:p-8 md:p-10 rounded-3xl bg-white/5 border border-white/[0.08] shadow-card-dark space-y-6 sm:space-y-8">
               <div className="border-b border-white/[0.08] pb-4">
-                <h3 className="font-sans font-bold text-xl sm:text-2xl text-white">
+                <h3 className="font-sans font-bold text-lg sm:text-xl md:text-2xl text-white">
                   St. James's Place in numbers
                 </h3>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 lg:gap-6">
                 {/* Stat 1 */}
-                <div className="space-y-2">
-                  <span className="text-xs font-semibold uppercase tracking-[0.15em] text-slate-400 block">
+                <div className="space-y-1.5 sm:space-y-2">
+                  <span className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] text-slate-400 block">
                     The UK's
                   </span>
-                  <div className="font-sans font-bold text-4xl sm:text-5xl text-gold-400">
+                  <div className="font-sans font-bold text-3xl sm:text-4xl lg:text-5xl text-[#3eb5e5]">
                     #<AnimatedCounter to={1} />
                   </div>
-                  <p className="text-xs text-slate-300 font-normal leading-snug">
+                  <p className="text-[11px] sm:text-xs text-slate-300 font-normal leading-snug">
                     wealth management company by funds under management
                   </p>
                 </div>
 
                 {/* Stat 2 */}
-                <div className="space-y-2">
-                  <span className="text-xs font-semibold uppercase tracking-[0.15em] text-slate-400 block">
+                <div className="space-y-1.5 sm:space-y-2">
+                  <span className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] text-slate-400 block">
                     Looking After
                   </span>
-                  <div className="font-sans font-bold text-4xl sm:text-5xl text-white">
+                  <div className="font-sans font-bold text-3xl sm:text-4xl lg:text-5xl text-white">
                     £<AnimatedCounter to={220} />
-                    <span className="text-2xl text-gold-400">bn</span>
+                    <span className="text-xl sm:text-2xl text-[#3eb5e5]">bn</span>
                   </div>
-                  <p className="text-xs text-slate-300 font-normal leading-snug">
+                  <p className="text-[11px] sm:text-xs text-slate-300 font-normal leading-snug">
                     worth of client assets under stewardship
                   </p>
                 </div>
 
                 {/* Stat 3 */}
-                <div className="space-y-2">
-                  <span className="text-xs font-semibold uppercase tracking-[0.15em] text-slate-400 block">
+                <div className="space-y-1.5 sm:space-y-2">
+                  <span className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] text-slate-400 block">
                     With a Rating of
                   </span>
-                  <div className="font-sans font-bold text-4xl sm:text-5xl text-gold-400 flex items-baseline gap-1">
+                  <div className="font-sans font-bold text-3xl sm:text-4xl lg:text-5xl text-[#3eb5e5] flex items-baseline gap-1">
                     <AnimatedCounter to={4.9} decimals={2} />
-                    <Star className="w-5 h-5 fill-gold-400 text-gold-400" />
+                    <Star className="w-4 h-4 sm:w-5 sm:h-5 fill-[#3eb5e5] text-[#3eb5e5]" />
                   </div>
-                  <p className="text-xs text-slate-300 font-normal leading-snug">
+                  <p className="text-[11px] sm:text-xs text-slate-300 font-normal leading-snug">
                     out of 5 on VouchedFor across more than 42,000 reviews
                   </p>
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-white/[0.08] text-xs text-slate-400 font-normal">
+              <div className="pt-4 border-t border-white/[0.08] text-[11px] sm:text-xs text-slate-400 font-normal">
                 Information correct as at December 2023. St. James's Place plc is a FTSE-listed wealth management company.
               </div>
             </div>

@@ -50,7 +50,7 @@ export default function FourStepProcess() {
           subtitle="From our very first conversation to long-term stewardship, our advisory process is clear, transparent, and structured around you."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {steps.map((step, idx) => {
             const Icon = step.icon;
             return (
@@ -60,23 +60,23 @@ export default function FourStepProcess() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: idx * 0.08 }}
-                className="p-8 rounded-3xl bg-[#111111] border border-white/10 hover:border-[#3eb5e5]/40 hover:-translate-y-1 flex flex-col justify-between group transition-all duration-300 relative overflow-hidden"
+                className="p-6 sm:p-8 rounded-3xl bg-[#111111] border border-white/10 hover:border-[#3eb5e5]/40 hover:-translate-y-1 flex flex-col justify-between group transition-all duration-300 relative overflow-hidden"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="font-sans font-bold text-3xl text-[#3eb5e5]">
+                    <span className="font-sans font-bold text-2xl sm:text-3xl text-[#3eb5e5]">
                       {step.number}
                     </span>
-                    <div className="w-10 h-10 rounded-xl bg-[#3eb5e5]/10 border border-[#3eb5e5]/30 flex items-center justify-center text-[#3eb5e5]">
+                    <div className="w-10 h-10 rounded-xl bg-[#3eb5e5]/10 border border-[#3eb5e5]/30 flex items-center justify-center text-[#3eb5e5] shrink-0">
                       <Icon className="w-5 h-5" />
                     </div>
                   </div>
 
                   <div>
-                    <h3 className="font-sans font-bold text-xl text-white group-hover:text-[#3eb5e5] transition-colors">
+                    <h3 className="font-sans font-bold text-lg sm:text-xl text-white group-hover:text-[#3eb5e5] transition-colors">
                       {step.title}
                     </h3>
-                    <p className="text-xs font-semibold text-[#3eb5e5] uppercase tracking-[0.12em] mt-1">
+                    <p className="text-[11px] sm:text-xs font-semibold text-[#3eb5e5] uppercase tracking-wider mt-1">
                       {step.subtitle}
                     </p>
                   </div>

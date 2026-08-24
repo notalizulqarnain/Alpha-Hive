@@ -27,7 +27,7 @@ export default function InTheNewsSection() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="rounded-3xl overflow-hidden bg-[#111111] border border-white/[0.08] shadow-card hover:shadow-card-hover hover:-translate-y-1 flex flex-col justify-between group transition-all duration-300"
             >
-              <div className="relative h-64 overflow-hidden bg-slate-900">
+              <div className="relative h-48 sm:h-64 overflow-hidden bg-slate-900">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -42,14 +42,14 @@ export default function InTheNewsSection() {
                 </div>
 
                 <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <span className="text-xs text-slate-400 font-normal">
+                  <span className="text-[11px] sm:text-xs text-slate-400 font-normal">
                     {item.publication} {item.date ? ` • ${item.date}` : ""}
                   </span>
                 </div>
               </div>
 
-              <div className="p-8 flex flex-col justify-between flex-grow space-y-4">
-                <h3 className="font-sans font-bold text-xl sm:text-2xl text-white leading-snug group-hover:text-gold-400 transition-colors">
+              <div className="p-6 sm:p-8 flex flex-col justify-between flex-grow space-y-4">
+                <h3 className="font-sans font-bold text-lg sm:text-xl md:text-2xl text-white leading-snug group-hover:text-gold-400 transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-400 font-normal leading-relaxed">
@@ -66,11 +66,11 @@ export default function InTheNewsSection() {
                   </Link>
 
                   {item.category === "Podcast" ? (
-                    <div className="w-8 h-8 rounded-full bg-gold-400/10 text-gold-400 border border-gold-400/30 flex items-center justify-center">
+                    <div className="w-8 h-8 rounded-full bg-gold-400/10 text-gold-400 border border-gold-400/30 flex items-center justify-center shrink-0">
                       <Play className="w-3.5 h-3.5 fill-gold-400 ml-0.5" />
                     </div>
                   ) : (
-                    <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 text-slate-400 flex items-center justify-center">
+                    <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 text-slate-400 flex items-center justify-center shrink-0">
                       <ExternalLink className="w-3.5 h-3.5" />
                     </div>
                   )}
@@ -80,10 +80,10 @@ export default function InTheNewsSection() {
           ))}
         </div>
 
-        <div className="text-center pt-4">
+        <div className="text-center pt-2 sm:pt-4">
           <Link
             href="/news"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gold-400 hover:bg-gold-300 text-black text-xs font-semibold uppercase tracking-wider transition-all shadow-subtle hover:shadow-card cursor-pointer"
+            className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 rounded-full bg-gold-400 hover:bg-gold-300 text-black text-xs font-semibold uppercase tracking-wider transition-all shadow-subtle hover:shadow-card cursor-pointer w-full sm:w-auto"
           >
             <span>Browse All Articles & Media Appearances</span>
             <ArrowRight className="w-4 h-4" />

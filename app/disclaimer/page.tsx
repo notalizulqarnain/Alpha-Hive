@@ -3,8 +3,8 @@ import SectionHeader from "@/components/ui/SectionHeader";
 
 export default function DisclaimerPage() {
   return (
-    <div className="py-12 sm:py-20 bg-[#0a0a0a]">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <div className="py-8 sm:py-16 md:py-20 bg-[#0a0a0a]">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
         <SectionHeader
           badge="FCA Regulatory Disclosure"
           title="Site Disclaimer"
@@ -12,7 +12,7 @@ export default function DisclaimerPage() {
           align="left"
         />
 
-        <div className="rounded-3xl bg-[#111111] border border-white/10 shadow-card p-8 sm:p-12 space-y-6 text-slate-300 text-sm leading-relaxed font-normal">
+        <div className="rounded-3xl bg-[#111111] border border-white/10 shadow-card p-6 sm:p-10 md:p-12 space-y-5 sm:space-y-6 text-slate-300 text-xs sm:text-sm leading-relaxed font-normal">
           <p>
             The information published on this website is provided as a convenience to visitors and should be used for information purposes only and is subject to change without notice. None of the information contained in this website constitutes financial or other professional advice in any way. If you require additional information, you should contact one of our personnel.
           </p>
